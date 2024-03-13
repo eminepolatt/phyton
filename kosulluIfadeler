@@ -1,0 +1,33 @@
+
+#kullanıcıdan giriş almak
+#input ( input string olarak alır) 
+giris=int(input("Bir sayi giriniz:"))
+print(giris+5)
+
+
+
+x=5
+print(x==5) #true yazar
+#if
+if x==5 and x>5:
+    print("x 5'e esittir")
+    if x>=5:
+        print("") #girintiler çok önemli printleri ifin içinde olmalı
+
+#elif (else if)
+elif x<5:
+    print("x 5ten küçük")
+#else
+else:
+    print("x 5ten büyük")
+
+#üçlü koşul ifadesi
+
+"""( 
+if x==5:
+    a=5
+else:
+    a=6)
+    bunun yerine kullanılır
+"""
+a=5 if x==5 else 6
