@@ -1,0 +1,21 @@
+#fonksiyon tanımları
+def fonksiyon(a,b):
+    print(a+b)
+
+fonksiyon(5,10)
+def fonk(a,b):
+    return a+ b
+c=fonk(2,4)
+print(c)
+
+
+#arbritaty ve keyword  argümanları
+def f1(*args):
+    print(args)
+
+f1(1,2,3,4,5)
+
+def f2(**kwargs):
+    print(kwargs)
+
+f2(a=5,c=4)
