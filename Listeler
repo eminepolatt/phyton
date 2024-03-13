@@ -1,0 +1,45 @@
+#list
+x=["a","b"]
+x[1]="c"
+
+#append =listeye bişey eklemek için her zaman sonuna ekler
+x.append("c")
+
+
+#remove =listeden değer vererek silmek için kullanılır
+x.remove()
+
+#pop =listeden sıra numarasına göre elemanı siler
+x.pop(0) # sıfırıncı elemanı siler
+x.pop() # en  son ekleneni siler
+a=x.pop() # silinen elemanı a da tutar
+print(x.pop(0)) #silineni ekrana yazfdık
+
+#clear =listeyi siler
+x.clear()
+
+#reverse
+x.reverse()
+
+#sort =sıralıyor
+x.sort()
+
+
+x.append("c")
+x.append("d")
+x.append("e")
+print(x)
+
+for i in range(3): # i=0,1,2 değerlerini alır
+    print(x[i])
+for i in x: # i, xin elemanlarını sırayla alır
+    print(i)
+
+#list comprehension
+"""
+liste=[]
+for i in range(50):
+    liste.append(i) 
+    bunun yerine
+    """
+liste=[i for i in range(50) if i%5 ==0]
