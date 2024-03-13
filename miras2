@@ -1,0 +1,35 @@
+class Arac:
+    def __init__(self,teker_sayisi,renk,koltuk_sayisi):
+        self.teker_sayisi=teker_sayisi
+        self.renk = renk
+        self.koltuk_sayisi=koltuk_sayisi
+
+    def hiz(self,yol,zaman):
+        return yol/zaman
+
+class Araba(Arac):
+    def __init__(self, teker_sayisi, renk, koltuk_sayisi, beygir_gucu, miktar):
+        super().__init__(teker_sayisi, renk, koltuk_sayisi)
+        self.beygir_gucu = beygir_gucu
+        self.miktar = miktar
+
+    def yakit_tuketimi(self, mesafe):
+        return mesafe/100*self.miktar
+
+class Bisiklet(Arac):
+    def __init__(self, teker_sayisi, renk, koltuk_sayisi, sele):
+        super().__init__(teker_sayisi, renk, koltuk_sayisi)
+        self.sele = sele
+
+    def vites(self, on, arka):
+        return on*arka
+
+araba = Araba(4, "kahverengi", 5, 300, 6)
+print(araba.renk)
+print(araba.yakit_tuketimi(300))
+print(araba.hiz(100, 0.5))
+
+bisiklet = Bisiklet(2, "mavi", 1, True)
+print(bisiklet.renk)
+print(bisiklet.vites(2, 5))
+print(bisiklet.hiz(10, 1))
