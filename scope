@@ -1,0 +1,12 @@
+#scope = bir değişkene ulaşılabilmesi
+x=5
+liste=[]
+def f1():
+    global x #yukarıdaki global değişkeni çağırdık
+    x=6
+    print(x)
+    def f2():
+        print(x)
+        liste.append("a")
+        f2()
+    f1()
