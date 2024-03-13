@@ -1,0 +1,12 @@
+class Hayvan:
+    def __init__(self, ayak_sayisi):
+        self.ayak_sayisi = ayak_sayisi
+
+class Kopek(Hayvan):#köpek sınıfı kendi özelliklerini hayvan sınıfından miras alıyor(kalıtım)
+    def __init__(self, renk, ayak_sayisi):
+        super().__init__(ayak_sayisi)
+        self.renk = renk
+
+Kopek = Kopek("siyah", 4)    #süper fonksiyon= miras aldığı sınıftan constractor çalıştırır
+
+print(Kopek.ayak_sayisi)
