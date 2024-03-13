@@ -1,0 +1,28 @@
+isim="emine polat"
+#lower
+print(isim.lower())
+#upper
+print(isim.upper())
+#count
+print(isim.count("a"))
+#isdecimal(true ya da false verir içeride sayı var mı yok mu)
+print(isim.isdecimal())
+#isaplpha(true ya da false verir string alfabetik mi gidiyor)
+print(isim.isalpha())
+#join(stringe yeni bi şey eklemek için)
+isim=isim.join("abc")
+#replace
+isim=isim.replace("ceren","tuncer")
+print(isim)
+#split(tekk bir stringi parçalara ayırır
+x="a,b,c,d,e"
+x.split(",") #virgüle göre ayırır
+print(x)
+#strip(baştaki ve sondaki boşlukları siliyor
+x=" merhaba dünya "
+x.strip()
+print(x)
+#format(stringe sonradan düzenleme imkanı verir
+x="Bugün günlerden {0}" # bugün günlerden sabit yanındaki {0} değiştirilebilir
+x.format("pazar")
+print(x)
