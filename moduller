@@ -1,0 +1,12 @@
+import time
+import random
+import odev1
+
+time.sleep(1)
+
+print(random.randint(1,5))
+print(odev1.bolunebilenler(20))
+
+#projeksiyon sınıfı aöma kapama
+#masa
+#sandalye sınıflar
