@@ -1,0 +1,24 @@
+#sözlük
+sozluk={"car":"araba","water":"su"}
+print(sozluk["car"])
+
+#sonradan eklemek
+sozluk["snow"]="kar"
+print(sozluk["snow"])
+
+# key tüm anahtarların bir listesini verir
+a=sozluk.keys()
+for i in a:
+    print(i)
+
+# values tüm değerlerinn bir listesini verir
+b=sozluk.values()
+for i in b:
+    print(i)
+
+#pop
+sozluk.pop("car")
+
+#sozluk comprehension
+c={i:i for i in range(50)}
+print(c)
