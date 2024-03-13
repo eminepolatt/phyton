@@ -1,0 +1,28 @@
+class Plane():
+    def __init__(self, kapasite, motor):  # constractor kurucu method
+        self.kapasite = kapasite
+        self.motor = motor
+        self.__hedef = None
+
+    def _hedef_belirle(self, hedef):
+        self.__hedef = hedef
+
+    def yazdir(self):
+        print(self.__hedef)
+
+# bir değişkeni tüm fonklarda kullanabilmek için self.c=s şeklinde tanımlarız
+# bir fonkda başka bir fonf çağırmak için self.v() şeklinde diğer fonku çağırırız
+
+ucak = Plane(400, 4)
+ucak2 = Plane(70, 2)
+ucak.__hedef = "A"
+print(ucak.__hedef)
+print(ucak.yazdir())
+
+# public=her yere açık dışarı değişken verebilir
+# private=doğrudan  dışarıdan erişilemez sadece sınıfın kendi içinden değiştirilebilir
+# protected=alt sınıflara da açık
+# def x(): => public
+# def __x(): => private
+# => protected"""
+-+-
