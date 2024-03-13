@@ -1,0 +1,27 @@
+#for
+for i in range(5): #range belirli bir sayıdaki kodun tekrarı için kullanılır  // i sıfırdan başlar o değere kadar gider
+    print(i)
+for i in range(5):
+    print("emine")
+
+for a in range(5):
+    if a==2:
+        continue
+    print(a)
+    
+#while
+sayi=5
+while sayi>0: # koşul
+    print("polat")
+    sayi=sayi-1
+    
+
+
+#break,continue,pass
+"""
+while sayi>0: # koşul
+    print("emine")
+    continue # döngünün  başına dönerek devam eder (sonsuz döngü oldu)
+    break #döngüyü bitirir
+    pass #pas geçer 
+    sayi=sayi-1"""
